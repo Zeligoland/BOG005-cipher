@@ -2,11 +2,21 @@ html, body {
     font-family:'Lato', sans-serif;
     background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747786_1280.jpg")
     }
-input {
+
+#encodeInput {
     padding : 50px 8px;
     width   : 70%;
     height  : 90%;
-    border-radius: 10px;;
+    border-radius: 0px;;
     display: block;
     margin-left: 0;
   }
+
+#offsetInput {
+    padding : 5px 5px;
+    width   : 10%;
+    height  : 10%;
+    border-radius: 0px;;
+    display: block;
+    margin-left: 0;   
+}
