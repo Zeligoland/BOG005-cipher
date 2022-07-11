@@ -1,0 +1,12 @@
+html, body {
+    font-family:'Lato', sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747786_1280.jpg")
+    }
+input {
+    padding : 50px 8px;
+    width   : 70%;
+    height  : 90%;
+    border-radius: 10px;;
+    display: block;
+    margin-left: 0;
+  }
