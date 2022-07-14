@@ -2,25 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Hide</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <h2>Ingrese el texto a encriptar</h2>
-      <input type="text" name="inputText" id="encodeInput" value="">
+    <body>
+      <button id="boton" onclick="mostrar() //Cambiar esto por un addEventListener;">Mostrar contenido</button>
+      <div id="h1">
+        <h1>Prueba</h1>
+        <button id="boton">Ocultar Contenido</button>
       </div>
-      <div>
-      <h2>Ingrese el Offset</h2>
-      <input type="number" name="inputOffset" id="offsetInput" value="">
+      <div>             
+        <h2>Ingrese el texto a encriptar</h2>
+        <input type="text" name="inputText" id="encodeInput" value="">
+        </div>
+        <div>
+        <h2>Ingrese el Offset</h2>
+        <input type="number" name="inputOffset" id="offsetInput" value="">
+        </div>
+        <br>
+        <div>
+        <input type="button" value="Enviar">
+        </div>
+        <h2>Resultado</h2>
+        <input type="text" name="inputText" id="encodeInput" value="">
       </div>
-      <br>
-      <div>
-      <input type="button" value="Enviar">
-      </div>
-      <h2>Resultado</h2>
-      <input type="text" name="inputText" id="encodeInput" value="">
-    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>

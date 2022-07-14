@@ -20,3 +20,6 @@ html, body {
     display: block;
     margin-left: 0;   
 }
+#h1 {
+   display: none;
+}
