@@ -3,29 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>Hide</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <body>
-      <button id="boton" onclick="mostrar() //Cambiar esto por un addEventListener;">Mostrar contenido</button>
+    <header>
+      <!--logo en el costado izquierdo-->
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ocultar Mensaje</a></li>
+        <li><a href="#">Descifrar Mensaje</a></li>
+      </ul>
+    </nav>
+    
+    <article>
+      <h1>¡Bienvenida a Hide! La app donde podrás solicitar asistencia con total confianza</h1>
+      <button id="start">Comenzar</button>
+      <figure><!--Añadir imagen derecha con estilo--></figure>
+      <h2>Qué te ofrecemos.</h2>
+    <div>
+      <p>Si eres una mujer que necesita asistencia dentro de una situación de peligro, puedes hacerlo aquí con total privacidad.</p>
+      <section id="navigation">
+        <h3>Quienes somos, instrucciones de uso</h3>
+        <button id="instructions">Leer más</button>
+        <h3>Envía un mensaje que se ocultará</h3>
+        <button id="encodeStart">Ir a la app</button>
+        <h3>Descifra un mensaje oculto</h3>
+        <button id="decodeStart">Ir a la app</button>
+      </section>
+    </div>
+    <div id="encodeApp">
+      <h3>Envía un mensaje que se ocultará</h3>
+      <p>Ingresa el mensaje</p>
+      <input type="text" name="inputText" id="encodeInput" value="">
+      <p>Ingresa el offset</p>
+      <input type="number" name="inputOffset" id="offsetInput" value="">
+      <button id="goEncode">Ocultar Mensaje</button>
+      <p>Resultado</p>
+      <!--Poner caja de resultado pero no como input <input type="text" name="inputText" id="encodeInput" value="">-->
+    </div>
+    <div id="decodeApp">
+      <h3>Descifra un mensaje oculto</h3>
+      <p>Ingresa el mensaje</p>
+      <input type="text" name="inputText" id="encodeInput" value="">
+      <p>Ingresa el offset</p>
+      <input type="number" name="inputOffset" id="offsetInput" value="">
+      <button id="goDecode">Descifrar Mensaje</button>
+      <p>Resultado</p>
+      <!--Poner caja de resultado pero no como input <input type="text" name="inputText" id="encodeInput" value="">-->
+    </div>
+    </article>
+    <!--Prueba de Ocultar y Mostrar Contenido-->
+          <button id="boton">Mostrar contenido</button>
       <div id="h1">
         <h1>Prueba</h1>
-        <button id="boton">Ocultar Contenido</button>
-      </div>
-      <div>             
-        <h2>Ingrese el texto a encriptar</h2>
-        <input type="text" name="inputText" id="encodeInput" value="">
-        </div>
-        <div>
-        <h2>Ingrese el Offset</h2>
-        <input type="number" name="inputOffset" id="offsetInput" value="">
-        </div>
-        <br>
-        <div>
-        <input type="button" value="Enviar">
-        </div>
-        <h2>Resultado</h2>
-        <input type="text" name="inputText" id="encodeInput" value="">
+        <button id="botonDos">Ocultar Contenido</button>
       </div>
     <script src="index.js" type="module"></script>
   </body>
