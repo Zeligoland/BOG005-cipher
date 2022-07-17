@@ -1,8 +1,8 @@
 html, body {
     font-family:'Raleway';
-    background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747786_1280.jpg")
+    background-image: url("https://img.freepik.com/free-vector/halftone-dots-white-background-gray-dots-halftone-texture_47243-1127.jpg?w=2000");
     }
-
+    
 #encodeInput {
     padding : 50px 8px;
     width   : 70%;
@@ -22,4 +22,17 @@ html, body {
 }
 #h1 {
    display: none;
+}
+#optionsPage {
+    display: none;
+}
+#encodeApp{
+    display: none;
+}
+#decodeApp{
+    display: none;
+}
+
+nav {
+    text-align: center;
 }

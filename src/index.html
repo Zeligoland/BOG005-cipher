@@ -23,9 +23,9 @@
       <h1>¡Bienvenida a Hide! La app donde podrás solicitar asistencia con total confianza</h1>
       <button id="start">Comenzar</button>
       <figure><!--Añadir imagen derecha con estilo--></figure>
+      <div id="optionsPage">
       <h2>Qué te ofrecemos.</h2>
-    <div>
-      <p>Si eres una mujer que necesita asistencia dentro de una situación de peligro, puedes hacerlo aquí con total privacidad.</p>
+       <p>Si eres una mujer que necesita asistencia dentro de una situación de peligro, puedes hacerlo aquí con total privacidad.</p>
       <section id="navigation">
         <h3>Quienes somos, instrucciones de uso</h3>
         <button id="instructions">Leer más</button>
@@ -36,32 +36,35 @@
       </section>
     </div>
     <div id="encodeApp">
-      <h3>Envía un mensaje que se ocultará</h3>
+      <h1>Envía un mensaje que se ocultará</h1>
       <p>Ingresa el mensaje</p>
-      <input type="text" name="inputText" id="encodeInput" value="">
+      <input type="text" id="inputEncode" name="inputEncode" value="">
+      <button type="button" id="submit">Enviar</button>
       <p>Ingresa el offset</p>
       <input type="number" name="inputOffset" id="offsetInput" value="">
       <button id="goEncode">Ocultar Mensaje</button>
       <p>Resultado</p>
-      <!--Poner caja de resultado pero no como input <input type="text" name="inputText" id="encodeInput" value="">-->
+      <p id="displayResults"></p><!--Poner caja de resultado pero no como input <input type="text" name="inputText" id="encodeInput" value="">-->
     </div>
     <div id="decodeApp">
-      <h3>Descifra un mensaje oculto</h3>
+      <h1>Descifra un mensaje oculto</h1>
       <p>Ingresa el mensaje</p>
-      <input type="text" name="inputText" id="encodeInput" value="">
+      <input type="text" id="inputDecode" name="inputDecode" value="">
       <p>Ingresa el offset</p>
-      <input type="number" name="inputOffset" id="offsetInput" value="">
+      <input type="number" id="inputOffset" name="inputOffset" value="">
       <button id="goDecode">Descifrar Mensaje</button>
       <p>Resultado</p>
       <!--Poner caja de resultado pero no como input <input type="text" name="inputText" id="encodeInput" value="">-->
     </div>
     </article>
-    <!--Prueba de Ocultar y Mostrar Contenido-->
+
+    <!--Prueba de Ocultar y Mostrar Contenido
           <button id="boton">Mostrar contenido</button>
       <div id="h1">
         <h1>Prueba</h1>
         <button id="botonDos">Ocultar Contenido</button>
-      </div>
+      </div>-->
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
