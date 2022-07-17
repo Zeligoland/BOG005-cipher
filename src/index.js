@@ -29,7 +29,8 @@ let showMessage = document.getElementById("submit");
 showMessage.addEventListener("click", inputPrint);
 
 // Declaración de variables para cipher
-
+//Llamar offset, llamar cadena de texto, nominar las variables que entran (abecedario completo)
+let offsetChosen = document.getElementById("offsetInput").value;
 
 
 //_______________________________________________________________
