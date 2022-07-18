@@ -22,8 +22,8 @@ decodeAppButton.addEventListener("click", showDecodeApp);
 
 //Función de impresión de la entrada de texto -- Pruebas
 function inputPrint(){
-    let element = document.getElementById("inputEncode").value;
-    document.getElementById("displayResults").innerHTML = element;
+    let showInput = document.getElementById("inputEncode").value;
+    document.getElementById("displayResults").innerHTML = showInput;
 }
 let showMessage = document.getElementById("submit");
 showMessage.addEventListener("click", inputPrint);
