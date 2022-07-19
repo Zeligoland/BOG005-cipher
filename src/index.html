@@ -8,17 +8,15 @@
   </head>
   <body>
     <header>
-      <!--logo en el costado izquierdo-->
+      <nav>
+        <ul class="navigationList">
+          <li class="Home"><a href="#">Inicio</a></li>
+          <li class="Hide_Message"><a href="#">Ocultar Mensaje</a></li>
+          <li class="Decode_Message"><a href="#">Descifrar Mensaje</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Ocultar Mensaje</a></li>
-        <li><a href="#">Descifrar Mensaje</a></li>
-      </ul>
-    </nav>
-    
+      
     <article>
       <h1>¡Bienvenida a Hide! La app donde podrás solicitar asistencia con total confianza</h1>
       <button id="start">Comenzar</button>
@@ -51,7 +49,7 @@
       <p>Ingresa el mensaje</p>
       <input type="text" id="inputDecode" name="inputDecode" value="">
       <p>Ingresa el offset</p>
-      <input type="number" id="inputOffset" name="inputOffset" value="">
+      <input type="number" id="offsetInput" name="offsetInput" value="">
       <button id="goDecode">Descifrar Mensaje</button>
       <p>Resultado</p>
       <!--Poner caja de resultado pero no como input <input type="text" name="inputText" id="encodeInput" value="">-->
