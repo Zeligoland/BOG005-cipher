@@ -11,29 +11,46 @@ html, body {
     text-align: center;
     }
     
-#encodeInput {
-    padding : 50px 8px;
-    width   : 70%;
-    height  : 90%;
-    border-radius: 0px;;
-    display: block;
-    margin-left: 0;
+#inputEncode {
+    padding : 10px 20px;
+    width   : 40%;
+    height  : 20%;
+    border-radius: 10px;;
+    display: inline-block;
+    align-items: center;
+    margin: 1em 2em 1em 1em;
+    margin-left: 15em;
   }
 
-#inputOffset {
+  #inputDecode {
+    padding : 10px 20px;
+    width   : 40%;
+    height  : 20%;
+    border-radius: 10px;;
+    display: inline-block;
+    align-items: center;
+    margin: 1em 2em 1em 1em;
+    margin-left: 5em;
+  }
+  #encodeOffset {
     padding : 5px 5px;
     width   : 10%;
     height  : 10%;
-    border-radius: 0px;;
-    display: block;   
+    border-radius: 10px;;
+    display: inline-block;
+    align-items: center;
+    margin: 1em 1em 1em 1em;
+    margin-left: 10em;  
 }
-
 #offsetInput {
     padding : 5px 5px;
     width   : 10%;
     height  : 10%;
-    border-radius: 0px;;
-    display: block;   
+    border-radius: 10px;;
+    display: inline-block;
+    align-items: center;
+    margin: 1em 1em 1em 1em;
+    margin-left: 10em;  
 }
 
 #h1 {
@@ -44,9 +61,17 @@ html, body {
 }
 #encodeApp{
     display: none;
+    border-style: dotted; 
+    border-width: 1px;
+    margin-top: 2em;
+    background-color: #A493ED;
 }
 #decodeApp{
     display: none;
+    border-style: dotted; 
+    border-width: 1px;
+    margin-top: 2em;
+    background-color: #EFE9D0;
 }
 
 button {
@@ -87,4 +112,7 @@ header {
 .Decode_Message {
     margin: 1rem;
     padding: 8;
+}
+#Instructions {
+    display: none;
 }

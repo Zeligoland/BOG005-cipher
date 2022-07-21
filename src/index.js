@@ -19,6 +19,32 @@ function showDecodeApp(){
 let decodeAppButton = document.getElementById('decodeStart');
 decodeAppButton.addEventListener("click", showDecodeApp);
 
+//Declaración de Variables
+const offsetEncInfo = document.getElementById('encodeOffset');
+const goEncode = document.getElementById('goEncode')
+const inputEncode = document.getElementById('inputEncode');
+
+goEncode.addEventListener('click', e => {
+    if (offsetEncInfo.value == '') {
+      alert('Ingresa un offset.');
+    }
+  });
+
+  goEncode.addEventListener('click', e => {
+    if (inputEncode.value == '') {
+      alert('Ingresa un mensaje.');
+    }
+  });
+
+  goEncode.addEventListener('click', e => {
+    if (offsetEncInfo.value == parseInt('0')) {
+      alert('Tu offset debe ser mayor a 0.');
+    }
+  });
+
+  //Declaración variables texto
+  const EncodeText = document.getElementById('inputEncode');
+
 
 //Función de impresión de la entrada de texto -- Pruebas
 function inputPrint(){
