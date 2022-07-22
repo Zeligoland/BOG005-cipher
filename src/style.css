@@ -20,6 +20,7 @@ html, body {
     align-items: center;
     margin: 1em 2em 1em 1em;
     margin-left: 15em;
+    text-transform: uppercase;
   }
 
   #inputDecode {
@@ -100,11 +101,6 @@ header {
 }
 
 .Home {
-    margin: 1rem;
-    padding: 8;
-}
-
-.Hide_Message {
     margin: 1rem;
     padding: 8;
 }

@@ -11,8 +11,13 @@ Acudir a una ayuda confiable sin ponerse en riesgo con sus victimarios
 ## Aporte del producto
 
 
+
 ## Ideación
 
+
+
 ## Prototipado (sketching)
+
+
 
 ## Testeo e Iteración
