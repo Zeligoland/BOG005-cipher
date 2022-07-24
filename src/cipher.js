@@ -1,10 +1,23 @@
 const cipher = {
-    encode: function () {
+ encode : function (offsetEncInfo, inputText) {
+  if (offsetEncInfo.value == '' || inputText.value == '' ) {throw new TypeError();
+  }
+  if (offsetEncInfo.value == 0 || inputText.value == 0) {throw new TypeError();
 
-    // por qué cuando escribo sin una función o nomino una variable se me bloquea el botón de comenzar? por qué me pide comas en vez de los puntos?
   }
+  if (offsetEncInfo.value == null || inputText.value == []) {throw new TypeError();
+  };
+// no entiendo por qué todo lo que edito aquí no me lo muestra la consola
+ // if (pruebaCifrado !== '') {
+   // let response = pruebaCifrado.charCodeAt(0);
+   // console.log(response);
+  
+
+ }
+    
+    
   }
+
   // function
   // let 
-
 export default cipher;

@@ -22,7 +22,8 @@ decodeAppButton.addEventListener("click", showDecodeApp);
 //Declaración de Variables
 const offsetEncInfo = document.getElementById('offsetInput');
 const goEncode = document.getElementById('goEncode')
-const inputEncode = document.getElementById('inputEncode');
+const inputText = document.getElementById('inputEncode');
+console.log(inputText.value);
 
 goEncode.addEventListener('click', e => {
     if (offsetEncInfo.value == '') {
@@ -37,14 +38,45 @@ goEncode.addEventListener('click', e => {
   });
 
   goEncode.addEventListener('click', e => {
-    if (inputEncode.value == '') {
+    if (inputText.value == '') {
       alert('Ingresa un mensaje.');
     }
   });
 
+// Prueba de cifrado, por letra
+let pruebaCifrado = 'HIJKLMNOPQRSTUVWXYZABCDEFG';
+let offsetTest = 33;
+let textoII = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-  //Declaración variables texto
-  const EncodeText = document.getElementById('inputEncode');
+// PRUEBA CIFRADO
+for(let i = 0; i < textoII.length; i++){
+  if (textoII[i] !== '') {
+    let response = textoII.charCodeAt([i]);
+    let withoutResidual = (response - 65 + offsetTest);
+    let finalOperation = (withoutResidual % 26 + 65);
+    console.log(finalOperation);
+    let letter = String.fromCharCode(finalOperation);
+    console.log(letter);
+  }
+  }
+// Prueba de des-cifrado, por letras
+
+for(let i = 0; i < pruebaCifrado.length; i++){
+if (pruebaCifrado[i] !== '') {
+  let response = pruebaCifrado.charCodeAt([i]);
+  let withoutResidual = (response + 65 - offsetTest);
+  let finalOperation = (withoutResidual % 26 + 65);
+  console.log(finalOperation);
+  let letter = String.fromCharCode(finalOperation);
+  console.log(letter);
+}
+}
+function decodePrint(){
+  document.getElementById("displayResults").innerHTML = console.log(letter);
+}
+
+
+
 
 
 //Función de impresión de la entrada de texto -- Pruebas
@@ -55,9 +87,12 @@ function inputPrint(){
 let showMessage = document.getElementById("submit");
 showMessage.addEventListener("click", inputPrint);
 
+// Mostrar información en la página
+const encodeResults = document.getElementById('showEncodeResults').innerHTML = 
+
 // Declaración de variables para cipher
 //Llamar offset, llamar cadena de texto, nominar las variables que entran (abecedario completo)
-let offsetChosen = document.getElementById("offsetInput").value;
+// let offsetChosen = document.getElementById("offsetInput").value;
 
 
 //_______________________________________________________________
