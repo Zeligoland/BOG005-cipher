@@ -23,7 +23,6 @@ decodeAppButton.addEventListener("click", showDecodeApp);
 const offsetEncInfo = document.getElementById('offsetInput');
 const goEncode = document.getElementById('goEncode')
 const inputText = document.getElementById('inputEncode');
-console.log(inputText.value);
 
 goEncode.addEventListener('click', e => {
     if (offsetEncInfo.value == '') {
@@ -43,7 +42,7 @@ goEncode.addEventListener('click', e => {
     }
   });
 
-// Prueba de cifrado, por letra
+// Prueba de cifrado
 let pruebaCifrado = 'HIJKLMNOPQRSTUVWXYZABCDEFG';
 let offsetTest = 33;
 let textoII = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -55,12 +54,12 @@ for(let i = 0; i < textoII.length; i++){
     let withoutResidual = (response - 65 + offsetTest);
     let finalOperation = (withoutResidual % 26 + 65);
     console.log(finalOperation);
-    let letter = String.fromCharCode(finalOperation);
-    console.log(letter);
+    let encodeLetter = String.fromCharCode(finalOperation);
+    console.log(encodeLetter);
+    let encodePrint = document.getElementById("showEncodeResults").innerHTML = encodeLetter;
   }
   }
-// Prueba de des-cifrado, por letras
-
+// Prueba de des-cifrado
 for(let i = 0; i < pruebaCifrado.length; i++){
 if (pruebaCifrado[i] !== '') {
   let response = pruebaCifrado.charCodeAt([i]);
@@ -71,13 +70,9 @@ if (pruebaCifrado[i] !== '') {
   console.log(letter);
 }
 }
-function decodePrint(){
+{
   document.getElementById("displayResults").innerHTML = console.log(letter);
 }
-
-
-
-
 
 //Función de impresión de la entrada de texto -- Pruebas
 function inputPrint(){
