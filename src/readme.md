@@ -9,6 +9,7 @@ Esta aplicación fue pensada para mujeres víctimas de violencia que deseen soil
 - Acudir a una ayuda confiable sin ponerse en riesgo con sus victimarios.
 - Encontrar una plataforma segura y discreta que disminuya el riesgo de ser descubierta.
 - 
+___
 
 ## Aporte del producto
 
