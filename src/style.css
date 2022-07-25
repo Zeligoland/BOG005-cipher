@@ -19,7 +19,7 @@ html, body {
     display: inline-block;
     align-items: center;
     margin: 1em 2em 1em 1em;
-    margin-left: 15em;
+    margin-left: 5em;
     text-transform: uppercase;
   }
 
@@ -32,6 +32,7 @@ html, body {
     align-items: center;
     margin: 1em 2em 1em 1em;
     margin-left: 5em;
+    text-transform: uppercase;
   }
   #encodeOffset {
     padding : 5px 5px;
@@ -43,7 +44,7 @@ html, body {
     margin: 1em 1em 1em 1em;
     margin-left: 10em;  
 }
-#offsetInput {
+#decodeOffset {
     padding : 5px 5px;
     width   : 10%;
     height  : 10%;

@@ -18,12 +18,13 @@ function showDecodeApp(){
 }
 let decodeAppButton = document.getElementById('decodeStart');
 decodeAppButton.addEventListener("click", showDecodeApp);
-
-//Declaración de Variables
+// Cifrado
+// Declaración de Variables
 const offsetEncInfo = document.getElementById('offsetInput');
 const goEncode = document.getElementById('goEncode');
 const inputText = document.getElementById('inputEncode');
 
+// Interacción con usuaria para evitar errores
 goEncode.addEventListener('click', e => {
     if (offsetEncInfo.value == '') {
       alert('Ingresa un offset.');
@@ -41,7 +42,8 @@ goEncode.addEventListener('click', e => {
       alert('Ingresa un mensaje.');
     }
   });
-
+  
+// Función del botón para ejecutar la función de cifrado
  goEncode.addEventListener('click', encode_start);
   
   function encode_start (){
@@ -51,54 +53,47 @@ goEncode.addEventListener('click', e => {
     console.log(encodeTextValue.toUpperCase());
     console.log(offsetValue);
     let codificar = cipher.encode(offsetValue, encodeTextValue);
-    console.log(cipher.encode);
+    document.getElementById("showEncodeResults").innerHTML = codificar;
   }
 
-    //document.getElementById("showEncodeResults").innerHTML = resultsEncode;
+  // Descifrado
+  // Declaración de Variables
+  const goDecode = document.getElementById('goDecode');
+  const decodeText = document.getElementById('inputDecode');
+  const decodeOffset = document.getElementById('decodeOffset');
 
-    // Prueba de cifrado
-let pruebaCifrado = 'H I J K L M N O P Q R S T U V W X Y Z A B C D E F G';
-let offsetTest = 33;
-let textoII = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  // Función del botón para descifrar
 
-//
+  goDecode.addEventListener('click',decode_start)
 
+  function decode_start (){
+  let decodeOffsetValue = document.getElementById('decodeOffset').value;
+  let decodeTextValue = document.getElementById('inputDecode').value;
+  decodeTextValue = new String(decodeTextValue);
+  console.log(decodeTextValue.toUpperCase());
+  console.log(decodeOffsetValue);
+  let descifrar = cipher.decode(decodeOffsetValue, decodeTextValue);
+  document.getElementById('showDecodeResults').innerHTML = descifrar;
+   }
 
-// IMPRESION DE RESULTADOS
-// let encodePrint = document.getElementById("showEncodeResults").innerHTML = encodeLetter;
-// Prueba de des-cifrado
-for(let i = 0; i < pruebaCifrado.length; i++){
-if (pruebaCifrado[i] !== '') {
-let response = pruebaCifrado.charCodeAt([i]);
-let withoutResidual = (response + 65 - offsetTest);
-let finalOperation = (withoutResidual % 26 + 65);
-console.log(finalOperation);
-let letter = String.fromCharCode(finalOperation);
-console.log(letter);
-}
-}
-//{
- // document.getElementById("displayResults").innerHTML = console.log(letter);
-//}
+// Interacción con usuaria para evitar errores
 
-//Función de impresión de la entrada de texto -- Pruebas
-function inputPrint(){
-    let showInput = document.getElementById("inputEncode").value;
-    document.getElementById("displayResults").innerHTML = showInput;
-}
-// Mostrar información en la página
-const encodeResults = document.getElementById('showEncodeResults').innerHTML = 
+goDecode.addEventListener('click', e => {
+  if (decodeOffset.value == '') {
+ alert('Ingresa un offset.');
+  }
+});
 
-// Declaración de variables para cipher
-//Llamar offset, llamar cadena de texto, nominar las variables que entran (abecedario completo)
-// let offsetChosen = document.getElementById("offsetInput").value;
+goDecode.addEventListener('click', e => {
+  if (decodeOffset.value == parseInt('0')) {
+ alert('Tu offset debe ser mayor a 0.');
+  }
+});
 
+goDecode.addEventListener('click', e => {
+  if (decodeText.value == '') {
+  alert('Ingresa un mensaje.');
+  }
+});
 
-//_______________________________________________________________
-// encodeEntrance.addEventListener("click", goEncode);
-// function ocultar(){
-// document.getElementById('h1').style.display = 'none';
-// let botonOcultar = document.getElementById("botonDos");
-// botonOcultar.addEventListener("click", ocultar);
-//let offset = getElementbyId("offsetInput"); // Aquí van los elementos del DOM. De aquí se jalan las variables ingresadas.;
 console.log(cipher);
