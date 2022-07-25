@@ -7,6 +7,13 @@ function showOptions(){
 let startButton = document.getElementById("start");
 startButton.addEventListener("click", showOptions);
 
+let instructionsButton = document.getElementById('instructions');
+instructionsButton.addEventListener('click', showInstructions);
+
+function showInstructions(){
+  document.getElementById('Instructions').style.display = 'block';
+}
+  
 function showEncodeApp(){
     document.getElementById('encodeApp').style.display = 'block';
 }
@@ -42,7 +49,7 @@ goEncode.addEventListener('click', e => {
       alert('Ingresa un mensaje.');
     }
   });
-  
+
 // Función del botón para ejecutar la función de cifrado
  goEncode.addEventListener('click', encode_start);
   
