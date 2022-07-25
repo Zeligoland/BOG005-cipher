@@ -21,7 +21,7 @@ decodeAppButton.addEventListener("click", showDecodeApp);
 
 //Declaración de Variables
 const offsetEncInfo = document.getElementById('offsetInput');
-const goEncode = document.getElementById('goEncode')
+const goEncode = document.getElementById('goEncode');
 const inputText = document.getElementById('inputEncode');
 
 goEncode.addEventListener('click', e => {
@@ -42,46 +42,50 @@ goEncode.addEventListener('click', e => {
     }
   });
 
-// Prueba de cifrado
-let pruebaCifrado = 'HIJKLMNOPQRSTUVWXYZABCDEFG';
+ goEncode.addEventListener('click', encode_start);
+  
+  function encode_start (){
+    let offsetValue = document.getElementById('offsetInput').value;
+    let encodeTextValue = document.getElementById('inputEncode').value;
+    encodeTextValue = new String(encodeTextValue);
+    console.log(encodeTextValue.toUpperCase());
+    console.log(offsetValue);
+    let codificar = cipher.encode(offsetValue, encodeTextValue);
+    console.log(cipher.encode);
+  }
+
+    //document.getElementById("showEncodeResults").innerHTML = resultsEncode;
+
+    // Prueba de cifrado
+let pruebaCifrado = 'H I J K L M N O P Q R S T U V W X Y Z A B C D E F G';
 let offsetTest = 33;
 let textoII = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-// PRUEBA CIFRADO
-for(let i = 0; i < textoII.length; i++){
-  if (textoII[i] !== '') {
-    let response = textoII.charCodeAt([i]);
-    let withoutResidual = (response - 65 + offsetTest);
-    let finalOperation = (withoutResidual % 26 + 65);
-    console.log(finalOperation);
-    let encodeLetter = String.fromCharCode(finalOperation);
-    console.log(encodeLetter);
-    let encodePrint = document.getElementById("showEncodeResults").innerHTML = encodeLetter;
-  }
-  }
+//
+
+
+// IMPRESION DE RESULTADOS
+// let encodePrint = document.getElementById("showEncodeResults").innerHTML = encodeLetter;
 // Prueba de des-cifrado
 for(let i = 0; i < pruebaCifrado.length; i++){
 if (pruebaCifrado[i] !== '') {
-  let response = pruebaCifrado.charCodeAt([i]);
-  let withoutResidual = (response + 65 - offsetTest);
-  let finalOperation = (withoutResidual % 26 + 65);
-  console.log(finalOperation);
-  let letter = String.fromCharCode(finalOperation);
-  console.log(letter);
+let response = pruebaCifrado.charCodeAt([i]);
+let withoutResidual = (response + 65 - offsetTest);
+let finalOperation = (withoutResidual % 26 + 65);
+console.log(finalOperation);
+let letter = String.fromCharCode(finalOperation);
+console.log(letter);
 }
 }
-{
-  document.getElementById("displayResults").innerHTML = console.log(letter);
-}
+//{
+ // document.getElementById("displayResults").innerHTML = console.log(letter);
+//}
 
 //Función de impresión de la entrada de texto -- Pruebas
 function inputPrint(){
     let showInput = document.getElementById("inputEncode").value;
     document.getElementById("displayResults").innerHTML = showInput;
 }
-let showMessage = document.getElementById("submit");
-showMessage.addEventListener("click", inputPrint);
-
 // Mostrar información en la página
 const encodeResults = document.getElementById('showEncodeResults').innerHTML = 
 
