@@ -1,4 +1,5 @@
 const cipher = {
+  // ENCODE
  encode: function (offsetValue, encodeTextValue) {
   // Empezamos con las condiciones para el error
     if (offsetValue == '' || encodeTextValue == '') {
@@ -37,7 +38,7 @@ const cipher = {
       }
     return finalString;
       },
-//    DECODE
+  //    DECODE
   decode : function(decodeOffsetValue, decodeTextValue) {
     // Variables para el error
     if (decodeOffsetValue == '' || decodeTextValue == '') {

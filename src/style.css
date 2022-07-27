@@ -6,11 +6,54 @@ html, body {
     font-family:'Raleway';
     background-image: url("https://img.freepik.com/free-vector/halftone-dots-white-background-gray-dots-halftone-texture_47243-1127.jpg?w=2000");
     font-size: 16px;
-    margin: 0;
-    padding: 0;
     text-align: center;
     }
+
+#Instructions {
+        display: none;
+        clear: both;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+#instructions{
+    width: 30px;
+    height: 50px;
+
+}
+
+#hideMessageInstructions{
+        background-color: #CBED7B;
+        width: 450px;
+        height: 300px;
+        text-align: justify;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-right: 8px;
+        border-radius: 20px;
+               
+    }
     
+#decodeMessageInstructions {
+        background-color: #CBED7B;
+        width: 450px;
+        height: 300px;
+        text-align: justify;
+        padding: 6px;
+        margin-left: 8px;
+        border-radius: 20px;
+    }
+#navigation {
+    display: flex;
+    justify-content: center;
+
+}
+
+#option {
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
 #inputEncode {
     padding : 10px 20px;
     width   : 40%;
@@ -38,7 +81,7 @@ html, body {
     padding : 5px 5px;
     width   : 10%;
     height  : 10%;
-    border-radius: 10px;;
+    border-radius: 10px;
     display: inline-block;
     align-items: center;
     margin: 1em 1em 1em 1em;
@@ -61,6 +104,7 @@ html, body {
 #optionsPage {
     display: none;
 }
+
 #encodeApp{
     display: none;
     border-style: dotted; 
@@ -110,6 +154,7 @@ header {
     margin: 1rem;
     padding: 8;
 }
-#Instructions {
-    display: none;
-}
+
+
+
+

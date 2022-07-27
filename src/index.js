@@ -11,7 +11,7 @@ let instructionsButton = document.getElementById('instructions');
 instructionsButton.addEventListener('click', showInstructions);
 
 function showInstructions(){
-  document.getElementById('Instructions').style.display = 'block';
+  document.getElementById('Instructions').style.display = 'flex';
 }
   
 function showEncodeApp(){

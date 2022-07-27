@@ -24,20 +24,29 @@
       <h2>Qué te ofrecemos.</h2>
        <p>Si eres una mujer que necesita asistencia dentro de una situación de peligro, puedes hacerlo aquí con total privacidad.</p>
       <section id="navigation">
-        <h3>Quienes somos, instrucciones de uso</h3>
-        <button id="instructions">Leer más</button>
-        <h3>Envía un mensaje que se ocultará</h3>
-        <button id="encodeStart">Ir a la app</button>
-        <h3>Descifra un mensaje oculto</h3>
-        <button id="decodeStart">Ir a la app</button>
+        <div id="option"><h3>Quienes somos, instrucciones de uso</h3>
+        <button id="instructions">Leer más</button></div>
+        <div id="option"><h3>Envía un mensaje que se ocultará</h3>
+        <button id="encodeStart">Ir a la app</button></div>
+        <div id="option"><h3>Descifra un mensaje oculto</h3>
+        <button id="decodeStart">Ir a la app</button></div>
       </section>
     </div>
     <div id="Instructions">
+    <section id="hideMessageInstructions">
       <h3>Para ocultar mensaje</h3>      
-      <p>El mensaje se ocultará a través del método Cifrado César, para que tu mensaje se oculte correctamente, es necesario que nos indiques el número de desplazamientos que tendrá cada una de las letras.</p>
+      <p>1. Ingresa el mensaje que deseas ocultar en la primera casilla. <br><br>
+        2. En la casilla siguiente donde te decimos "ingresa el Offset" danos un número, 
+        será un número de seguridad que ocultará tu mensaje de manera única. <strong>Solo la persona que tenga el número podrá descifrar tu mensaje.</strong><br><br>
+        3. Puedes clickear el botón "ocultar mensaje" y debajo del resultado aparecerá tu mensaje cifrado<br> ¡Cópialo y envíalo a quien necesites!</p>
+        </section>
+    <section id="decodeMessageInstructions">
       <h3>Para descifrar mensaje</h3>
-      <p>El mensaje se descifrará a través del método Cifrado César, para que podamos descifrarlo correctamente, la persona que te lo envió debe indicarte con qué offset está.</p>
-    </div>
+      <p>1. Ingresa el mensaje que deseas descifrar en la primera casilla. <br><br>
+        2. En la casilla siguiente donde te decimos "ingresa el Offset" pon el <strong>número de seguridad con el que está cifrado el mensaje.</strong><br><br>
+        3. Clickea en el botón "descifrar mensaje" y debajo del resultado aparecerá tu mensaje descifrado</p>
+    </section>
+    </div id="Instructions">
     <div id="encodeApp">
       <h1>Envía un mensaje que se ocultará</h1>
       <p>Ingresa el mensaje</p>
