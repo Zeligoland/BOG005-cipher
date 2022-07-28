@@ -17,7 +17,7 @@ const cipher = {
     let space;
     // Formula para codificar
     for (let i = 0; i < encodeTextValue.length; i++) {
-      if (encodeTextValue[i] !== '') {
+      if (encodeTextValue[i] != ' ') {
         console.log('letra:', encodeTextValue[i].toUpperCase());
         let response = encodeTextValue[i].toUpperCase().charCodeAt();
         console.log('ascci', response);
@@ -31,8 +31,8 @@ const cipher = {
         finalString += encodeLetter;
       } else if (encodeTextValue[i] == ' ') {
         space = encodeTextValue.charCodeAt(32);
-        space = string.fromCharCode(32);
-        finalString += space;
+        space = String.fromCharCode(32);
+      finalString += space;
       }
 
       }
@@ -55,10 +55,11 @@ const cipher = {
     // Variable que almacenará el resultado de Decode
 
     let finalDecodeString = '';
+    let spaceDecode;
 
 
   for (let i=0; i < decodeTextValue.length; i++) {
-    if(decodeTextValue[i] !== '') {
+    if(decodeTextValue[i] != ' ') {
       console.log('Letras: ', decodeTextValue[i].toUpperCase());
       let decodeResponse = decodeTextValue[i].toUpperCase().charCodeAt();
         console.log('ascci', decodeResponse);
@@ -70,7 +71,10 @@ const cipher = {
         let decodeLetter = String.fromCharCode([finalDecodeOperation]);
         console.log(decodeLetter);
         finalDecodeString += decodeLetter;
-    }
+    } else if (decodeTextValue[i] == ' ') {
+      spaceDecode = decodeTextValue.charCodeAt(32);
+      spaceDecode = String.fromCharCode(32);
+    finalDecodeString += spaceDecode;}
   }
   return finalDecodeString;
   }

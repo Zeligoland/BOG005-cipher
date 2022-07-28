@@ -32,19 +32,19 @@ const goEncode = document.getElementById('goEncode');
 const inputText = document.getElementById('inputEncode');
 
 // Interacción con usuaria para evitar errores
-goEncode.addEventListener('click', e => {
+goEncode.addEventListener('click', () => {
     if (offsetEncInfo.value == '') {
       alert('Ingresa un offset.');
     }
   });
 
-  goEncode.addEventListener('click', e => {
+  goEncode.addEventListener('click', () => {
     if (offsetEncInfo.value == parseInt('0')) {
       alert('Tu offset debe ser mayor a 0.');
     }
   });
 
-  goEncode.addEventListener('click', e => {
+  goEncode.addEventListener('click', () => {
     if (inputText.value == '') {
       alert('Ingresa un mensaje.');
     }
@@ -85,19 +85,19 @@ goEncode.addEventListener('click', e => {
 
 // Interacción con usuaria para evitar errores
 
-goDecode.addEventListener('click', e => {
+goDecode.addEventListener('click', () => {
   if (decodeOffset.value == '') {
  alert('Ingresa un offset.');
   }
 });
 
-goDecode.addEventListener('click', e => {
+goDecode.addEventListener('click', () => {
   if (decodeOffset.value == parseInt('0')) {
  alert('Tu offset debe ser mayor a 0.');
   }
 });
 
-goDecode.addEventListener('click', e => {
+goDecode.addEventListener('click', () => {
   if (decodeText.value == '') {
   alert('Ingresa un mensaje.');
   }
