@@ -1,7 +1,7 @@
 const cipher = {
   // ENCODE
- encode: function (offsetValue, encodeTextValue) {
-  // Empezamos con las condiciones para el error
+  encode: function (offsetValue, encodeTextValue) {
+    // Empezamos con las condiciones para el error
     if (offsetValue == '' || encodeTextValue == '') {
       throw new TypeError();
     }
@@ -32,14 +32,14 @@ const cipher = {
       } else if (encodeTextValue[i] == ' ') {
         space = encodeTextValue.charCodeAt(32);
         space = String.fromCharCode(32);
-      finalString += space;
+        finalString += space;
       }
 
-      }
+    }
     return finalString;
-      },
+  },
   //    DECODE
-  decode : function(decodeOffsetValue, decodeTextValue) {
+  decode: function (decodeOffsetValue, decodeTextValue) {
     // Variables para el error
     if (decodeOffsetValue == '' || decodeTextValue == '') {
       throw new TypeError();
@@ -58,10 +58,10 @@ const cipher = {
     let spaceDecode;
 
 
-  for (let i=0; i < decodeTextValue.length; i++) {
-    if(decodeTextValue[i] != ' ') {
-      console.log('Letras: ', decodeTextValue[i].toUpperCase());
-      let decodeResponse = decodeTextValue[i].toUpperCase().charCodeAt();
+    for (let i = 0; i < decodeTextValue.length; i++) {
+      if (decodeTextValue[i] != ' ') {
+        console.log('Letras: ', decodeTextValue[i].toUpperCase());
+        let decodeResponse = decodeTextValue[i].toUpperCase().charCodeAt();
         console.log('ascci', decodeResponse);
 
         let decodeWithoutResidual = (decodeResponse + 65 - parseInt(decodeOffsetValue));
@@ -71,12 +71,13 @@ const cipher = {
         let decodeLetter = String.fromCharCode([finalDecodeOperation]);
         console.log(decodeLetter);
         finalDecodeString += decodeLetter;
-    } else if (decodeTextValue[i] == ' ') {
-      spaceDecode = decodeTextValue.charCodeAt(32);
-      spaceDecode = String.fromCharCode(32);
-    finalDecodeString += spaceDecode;}
-  }
-  return finalDecodeString;
+      } else if (decodeTextValue[i] == ' ') {
+        spaceDecode = decodeTextValue.charCodeAt(32);
+        spaceDecode = String.fromCharCode(32);
+        finalDecodeString += spaceDecode;
+      }
+    }
+    return finalDecodeString;
   }
 };
 

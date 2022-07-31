@@ -2,119 +2,110 @@
     box-sizing: border-box;
 }
 
-html, body {
-    font-family:'Raleway';
+html,
+body {
+    font-family: 'Raleway';
     background-image: url("https://img.freepik.com/free-vector/halftone-dots-white-background-gray-dots-halftone-texture_47243-1127.jpg?w=2000");
     font-size: 16px;
     text-align: center;
-    }
+}
 
 #Instructions {
-        display: none;
-        clear: both;
-        margin-top: 2em;
-        justify-content: center;
-    }
-
-#instructions{
-    width: 30px;
-    height: 50px;
-
-}
-
-#hideMessageInstructions{
-        background-color: #CBED7B;
-        width: 450px;
-        height: 300px;
-        text-align: justify;
-        padding-left: 6px;
-        padding-right: 6px;
-        margin-right: 8px;
-        border-radius: 20px;
-               
-    }
-    
-#decodeMessageInstructions {
-        background-color: #CBED7B;
-        width: 450px;
-        height: 300px;
-        text-align: justify;
-        padding: 6px;
-        margin-left: 8px;
-        border-radius: 20px;
-    }
-#navigation {
-    display: flex;
+    display: none;
+    clear: both;
+    margin-top: 2em;
     justify-content: center;
+}
+
+#hideMessageInstructions {
+    background-color: #CBED7B;
+    width: 450px;
+    height: 300px;
+    text-align: justify;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 8px;
+    border-radius: 20px;
 
 }
 
-#option {
+#decodeMessageInstructions {
+    background-color: #CBED7B;
+    width: 450px;
+    height: 300px;
+    text-align: justify;
+    padding: 6px;
     margin-left: 8px;
-    margin-right: 8px;
-
+    border-radius: 20px;
 }
 #inputEncode {
-    padding : 10px 20px;
-    width   : 40%;
-    height  : 20%;
-    border-radius: 10px;;
+    padding: 10px 20px;
+    width: 40%;
+    height: 20%;
+    border-radius: 10px;
+    ;
     display: inline-block;
     align-items: center;
     margin: 1em 2em 1em 1em;
     margin-left: 5em;
     text-transform: uppercase;
-  }
+}
 
-  #inputDecode {
-    padding : 10px 20px;
-    width   : 40%;
-    height  : 20%;
-    border-radius: 10px;;
+#inputDecode {
+    padding: 10px 20px;
+    width: 40%;
+    height: 20%;
+    border-radius: 10px;
+    ;
     display: inline-block;
     align-items: center;
     margin: 1em 2em 1em 1em;
     margin-left: 5em;
     text-transform: uppercase;
-  }
-  #encodeOffset {
-    padding : 5px 5px;
-    width   : 10%;
-    height  : 10%;
+}
+
+#encodeOffset {
+    padding: 5px 5px;
+    width: 10%;
+    height: 10%;
     border-radius: 10px;
     display: inline-block;
     align-items: center;
     margin: 1em 1em 1em 1em;
-    margin-left: 10em;  
+    margin-left: 10em;
 }
+
 #decodeOffset {
-    padding : 5px 5px;
-    width   : 10%;
-    height  : 10%;
-    border-radius: 10px;;
+    padding: 5px 5px;
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    ;
     display: inline-block;
     align-items: center;
     margin: 1em 1em 1em 1em;
-    margin-left: 10em;  
+    margin-left: 10em;
 }
 
 #h1 {
-   display: none;
+    display: none;
 }
+
 #optionsPage {
     display: none;
 }
 
-#encodeApp{
+#encodeApp {
     display: none;
-    border-style: dotted; 
+    border-style: dotted;
     border-width: 1px;
     margin-top: 2em;
     background-color: #A493ED;
 }
-#decodeApp{
+
+#decodeApp {
     display: none;
-    border-style: dotted; 
+    border-style: dotted;
     border-width: 1px;
     margin-top: 2em;
     background-color: #EFE9D0;
@@ -129,6 +120,7 @@ button {
     width: 10%;
     height: 50%;
 }
+
 header {
     align-items: center;
     justify-content: space-around;
@@ -154,7 +146,3 @@ header {
     margin: 1rem;
     padding: 8;
 }
-
-
-
-
