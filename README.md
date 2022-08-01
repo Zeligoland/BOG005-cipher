@@ -1,5 +1,7 @@
 # Hide - Asistencia para Mujeres Víctimas de Violencia
 
+![image](./logo.png)
+
 ## Usuarias Principales
 
 Esta aplicación está dirigida a mujeres de cualquier rango de edad que cuenten con acceso a internet, estén siendo víctimas de violencia y necesiten pedir ayuda. La aplicación tiene como objetivo brindar protección a través del ocultamiento de los mensajes.
@@ -32,18 +34,21 @@ Para idear esta aplicación se tuvo en cuenta la interfaz de otras aplicaciones 
 
 - Las aplicaciones tienen la apariencia de ser de "estilo de vida" y nunca una línea de emergencia.
 - Se deben evitar colores o símbolos asociados con el peligro.
-- Se deben evitar palabras como "victima", "violencia", "ayuda", "SOS"
+- Se deben evitar palabras como "victima", "violencia", "ayuda", "SOS".
 
 ### Prototipado (sketching)
 
+Los primeros prototipos de la aplicación estaban orientados únicamente a la funcionalidad del cifrado, como se ve en los dos modelos a continuación. 
 
 ![image](./modelos.png)
 
+El primer modelo era una sola pantalla y no contemplaba la bienvenida, las instrucciones y un lenguaje amigable para las usuarias. Esta última versión incluye todo esto.
+
 ![image](./resultado.png)
 
-- Como se ve inicialmente el primer prototipo incluía únicamente la funcionalidad, en esta última versión hay una ventana de bienvenida, una sección de instrucciones y botones que permiten ir a cada aplicación.
+Adicionalmente la aplicación cuenta con mayor interactividad (una que no se había contemplado en los primeros prototipos) con las alertas correspondientes para el correcto uso de la aplicación.
 
-- En la experiencia de usuario se contemplaron alertas para el correcto uso de la aplicación.
+![image](./alerts.png)
 
 
 ## Referencias
