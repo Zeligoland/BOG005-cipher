@@ -23,6 +23,7 @@ function showInstructions() {
 function showEncodeApp() {
   document.getElementById('encodeApp').style.display = 'block';
 }
+
 let encodeAppButton = document.getElementById('encodeStart');
 encodeAppButton.addEventListener("click", showEncodeApp);
 
