@@ -18,6 +18,25 @@ figure {
     height: 20px;
 }
 
+button {
+    background-color: #4F4772;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 10%;
+    height: 50%;
+}
+
+#start {
+    padding: 10px 20px;
+    width: 20%;
+    height: 40%;
+    font-size: 17px;
+}
+
 #Instructions {
     display: none;
     clear: both;
@@ -45,63 +64,6 @@ figure {
     border-radius: 20px;
 }
 
-#inputEncode {
-    padding: 10px 20px;
-    width: 40%;
-    height: 20%;
-    border-radius: 10px;
-    display: inline-block;
-    align-items: center;
-    margin: 1em 2em 1em 1em;
-    margin-left: 5em;
-    text-transform: uppercase;
-}
-
-#inputDecode {
-    padding: 10px 20px;
-    width: 40%;
-    height: 20%;
-    border-radius: 10px;
-    display: inline-block;
-    align-items: center;
-    margin: 1em 2em 1em 1em;
-    margin-left: 5em;
-    text-transform: uppercase;
-}
-
-#encodeOffset {
-    padding: 5px 5px;
-    width: 10%;
-    height: 10%;
-    border-radius: 10px;
-    display: inline-block;
-    align-items: center;
-    margin: 1em 1em 1em 1em;
-    margin-left: 10em;
-}
-
-#offsetInput {
-    padding: 5px 5px;
-    width: 10%;
-    height: 10%;
-    border-radius: 10px;
-    display: inline-block;
-    align-items: center;
-    margin: 1em 1em 1em 1em;
-    margin-left: 10em;
-}
-
-#decodeOffset {
-    padding: 5px 5px;
-    width: 10%;
-    height: 10%;
-    border-radius: 10px;
-    display: inline-block;
-    align-items: center;
-    margin: 1em 1em 1em 1em;
-    margin-left: 10em;
-}
-
 #h1 {
     display: none;
 }
@@ -118,6 +80,28 @@ figure {
     background-color: #A493ED;
 }
 
+#inputEncode {
+    padding: 10px 20px;
+    width: 40%;
+    height: 20%;
+    border-radius: 10px;
+    display: inline-block;
+    align-items: center;
+    margin: 1em 2em 1em 1em;
+    margin-left: 5em;
+    text-transform: uppercase;
+}
+#offsetInput {
+    padding: 5px 5px;
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    display: inline-block;
+    align-items: center;
+    margin: 1em 1em 1em 1em;
+    margin-left: 10em;
+}
+
 #decodeApp {
     display: none;
     border-style: dotted;
@@ -126,44 +110,27 @@ figure {
     background-color: #BEDAE6;
 }
 
-button {
-    background-color: #4F4772;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    width: 10%;
-    height: 50%;
-}
-
-#start {
+#inputDecode {
     padding: 10px 20px;
-    width: 20%;
-    height: 40%;
-    font-size: 17px;
-}
-
-header {
+    width: 40%;
+    height: 20%;
+    border-radius: 10px;
+    display: inline-block;
     align-items: center;
-    justify-content: space-around;
-    padding: 1 rem;
-    display: flex;
-    text-decoration: none;
+    margin: 1em 2em 1em 1em;
+    margin-left: 5em;
+    text-transform: uppercase;
 }
 
-.navigationList {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-.Home {
-    margin: 1rem;
-    padding: 8;
+#decodeOffset {
+    padding: 5px 5px;
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    display: inline-block;
+    align-items: center;
+    margin: 1em 1em 1em 1em;
+    margin-left: 10em;
 }
 
 .Decode_Message {
