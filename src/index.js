@@ -4,8 +4,14 @@ import cipher from './cipher.js';
 function showOptions() {
   document.getElementById('optionsPage').style.display = 'block';
 }
+
+function hideStart(){
+  document.getElementById('welcome').style.display = 'none';
+}
+
 let startButton = document.getElementById("start");
 startButton.addEventListener("click", showOptions);
+startButton.addEventListener("click", hideStart);
 
 let instructionsButton = document.getElementById('instructions');
 instructionsButton.addEventListener('click', showInstructions);

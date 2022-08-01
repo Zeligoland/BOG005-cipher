@@ -40,7 +40,7 @@ const cipher = {
   },
   //    DECODE
   decode: function (decodeOffsetValue, decodeTextValue) {
-    // Variables para el error
+    // Condiciones para el error
     if (decodeOffsetValue == '' || decodeTextValue == '') {
       throw new TypeError();
     }
@@ -51,13 +51,13 @@ const cipher = {
     if (decodeOffsetValue == null || decodeTextValue == []) {
       throw new TypeError();
     }
-    // Formula para decodificar
-    // Variable que almacenará el resultado de Decode
+    
+    // Variables que almacenará el resultado de Decode
 
     let finalDecodeString = '';
     let spaceDecode;
-
-
+    
+    // Formula para decodificar
     for (let i = 0; i < decodeTextValue.length; i++) {
       if (decodeTextValue[i] != ' ') {
         console.log('Letras: ', decodeTextValue[i].toUpperCase());
