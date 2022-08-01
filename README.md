@@ -39,6 +39,7 @@ Para idear esta aplicación se tuvo en cuenta la interfaz de otras aplicaciones 
 
 ![image](./modelos.png)
 
+![image](./resultado.png)
 
 - Como se ve inicialmente el primer prototipo incluía únicamente la funcionalidad, en esta última versión hay una ventana de bienvenida, una sección de instrucciones y botones que permiten ir a cada aplicación.
 
